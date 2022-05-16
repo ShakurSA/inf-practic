@@ -69,5 +69,6 @@ def MultiThreading(task_id):
 
 list = []
 for task_id in range(1, 21):
-    list[task_id] = threading.Thread(target=MultiThreading(), args=(task_id,))
+    list[task_id] = threading.Thread(target=MultiThreading(task_id), args=(task_id,))
     list[task_id].start()
+
