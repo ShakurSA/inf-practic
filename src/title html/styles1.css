@@ -1,0 +1,38 @@
+body {
+background-color: #AFEEEE;
+}
+
+form {
+  position:absolute;
+  left: 40%;
+  top: 20%;
+  font-size: 20px;
+
+}
+.bad_submit{
+
+  background-color: #AFEEEE;
+  position:absolute;
+  left: 10%;
+  font-size: 14px;
+}
+
+input[type=text]:invalid:not(:placeholder-shown), input[type=password]:invalid:not(:placeholder-shown) {
+box-shadow: 0 0 5px 1px #FA8072;
+}
+
+input:focus:invalid {
+box-shadow: none;
+}
+
+input[type=submit] {
+background-color: #48D1CC;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 50%;
+opacity: 0.9;
+border-radius: 5px;
+}

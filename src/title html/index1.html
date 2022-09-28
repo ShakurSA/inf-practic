@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles1.css">
+
+</head>
+<body>
+	<div id='wrapper'>
+    <form class="sign-in-form test" name="name">
+        <h1>Форма для регистрации</h1>
+        <label class="sign-in-form__label">Логин:
+            <input type="text" placeholder=" login > 6 символов"  id="login"  required >
+        </label>
+        <br>
+        <label class="sign-in-form__label">Пароль:
+            <input type="password" placeholder="пароли должны совпадать"  id="password" required >
+        </label>
+        <br>
+        <label class="sign-in-form__label">Подтверждение пароля:
+            <input type="password" placeholder=" "  id="check_password" required >
+        </label>
+        <br>
+        <label class="sign-in-form__label">Дата:
+            <input type="date" id="date" required >
+        </label>
+        <br>
+        <label class="sign-in-form__label">Возраст:
+            <input type="text" placeholder="возраст > 17"  id="age"  required >
+        </label>
+        <br>
+        <br>
+        <input id="button" type="submit" value="Отправить" class="bad_submit" onclick="CheckPassword()">
+    </form>
+    <script src="test.js"></script>
+	</div>
+</body>
+</html>
